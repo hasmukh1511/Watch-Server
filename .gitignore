@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyi
+.python-version
+
+# Virtual environments
+venv/
+.env/
+env/
+ENV/
+virtualenv/
+virtualenvs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite3
+*.sqlite
+
+# Secrets
+.env
+.env.*
+*.env
+secrets.py
+config.py
+*.key
+*.pem
+*.crt
+
+# Build files
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Uploads
+uploads/
+downloads/
+cache/

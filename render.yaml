@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: watch-server
+    env: python
+    plan: free
+    region: ohio
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.18
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALGORITHM
+        value: HS256
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
+      - key: DEBUG
+        value: false
+      - key: CORS_ORIGINS
+        value: '["https://your-parent-app.com", "https://your-child-app.com", "http://localhost:3000"]'
